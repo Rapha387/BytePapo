@@ -1,0 +1,40 @@
+:root{
+  --padding-center: 3rem 
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+h2{
+  font-size: 2.5rem;
+}
+
+.container{
+  width: 1200px;
+  margin: auto;
+}
+
+.sobre{
+  background-color: red;
+  padding: var(--padding-center);
+}
+.sobre .container{
+  flex-direction: column;
+  gap: 20px
+}
+
+.sobre p{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.episodios{
+  background-color: blue;
+  padding: var(--padding-center);
+}
+
+.episodios .container{
+  flex-direction: column;
+  gap: 20px;
+}
