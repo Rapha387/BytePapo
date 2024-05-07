@@ -15,9 +15,13 @@ h2{
   margin: auto;
 }
 
+.escondido{
+  display: none;
+}
+
 .sobre{
   width: 100%;
-  background-color: red;
+  background-color: #dadada;
   padding: var(--padding-center);
 }
 .sobre .container{
@@ -33,7 +37,7 @@ h2{
 
 .episodios{
   width: 100%;
-  background-color: blue;
+  background-color: #fff;
   padding: var(--padding-center);
 }
 
@@ -52,7 +56,7 @@ h2{
 }
 
 .episodio .imgEpisodio{
-  width: 167px;
+  width: 186px;
   border-radius: 5px;
 }
 
@@ -63,7 +67,7 @@ h2{
 }
 
 .infos-episodio p {
-  height: 96px;
+  height: 116px;
   width: 100%;
   line-height: 30px;
   text-align: justify;
@@ -87,4 +91,15 @@ h2{
 .participante img{
   width: 30px;
   border-radius: 50%;
+}
+
+
+@media screen and (max-width: 800px){
+  .episodio{
+    flex-direction: column;
+  }
+
+  .episodio-data{
+    display: none;
+  }
 }

@@ -10,6 +10,7 @@
   list-style: none;
 }
 
+
 .flex{
   display: flex;
 }
@@ -67,6 +68,33 @@ a:hover {
   color: #3e68e6;
 }
 
+header nav .btnMenuHeader {
+  width: 30px;
+  height: 25px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.btnMenuHeader span {
+  height: 4px;
+  border-radius: 2px;
+  width: 100%;
+  transition: 0.1s;
+  background-color: #000;
+}
+
 main{
   width: 100%;
+}
+
+@media screen and (max-width: 500px){
+  header nav ul{
+    display: none !important;
+  }
+
+  header nav label{
+    display: flex !important;
+  }
 }
