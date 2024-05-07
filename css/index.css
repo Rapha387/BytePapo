@@ -47,12 +47,19 @@ h2{
 }
 
 .episodio{
+  background: #babaca;
+  border-radius: 5px;
   width: 100%;
   align-items: center;
   justify-content: space-around;
   gap: 30px;
-  border-top: solid thin #babaca;
-  padding-top: 2rem;
+  padding: 2rem;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.episodio:hover{
+  background-color: #e8e8e8;
 }
 
 .episodio .imgEpisodio{
@@ -91,6 +98,33 @@ h2{
 .participante img{
   width: 30px;
   border-radius: 50%;
+}
+
+
+.equipe{
+  width: 100%;
+  background-color: #dadada;
+  padding: var(--padding-center);
+}
+
+.equipe .container{
+  flex-direction: column;
+}
+
+.equipe .membros{
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.equipe .membro{
+  width: 28%;
+}
+
+.membro img{
+  border-radius: 5px;
+  width: 100%;
 }
 
 

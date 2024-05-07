@@ -85,6 +85,26 @@ header nav .btnMenuHeader {
   background-color: #000;
 }
 
+#chkMenuHeader:checked ~ .navHeaderResponsivo {
+  display: block;
+}
+
+#chkMenuHeader:checked ~ .btnMenuHeader {
+  display: none;
+}
+
+#btnMenuHeader.animarMenu .linha:nth-child(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+#btnMenuHeader.animarMenu .linha:nth-child(2) {
+  display: none;
+}
+
+#btnMenuHeader.animarMenu .linha:nth-child(3) {
+  transform: translateY(-11px) rotate(45deg);
+}
+
 main{
   width: 100%;
 }
