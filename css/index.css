@@ -11,11 +11,12 @@ h2{
 }
 
 .container{
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
 }
 
 .sobre{
+  width: 100%;
   background-color: red;
   padding: var(--padding-center);
 }
@@ -25,16 +26,65 @@ h2{
 }
 
 .sobre p{
+  line-height: 40px;
   text-align: center;
   font-size: 1.2rem;
 }
 
 .episodios{
+  width: 100%;
   background-color: blue;
   padding: var(--padding-center);
 }
 
 .episodios .container{
   flex-direction: column;
-  gap: 20px;
+  gap: 3rem;
+}
+
+.episodio{
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  border-top: solid thin #babaca;
+  padding-top: 2rem;
+}
+
+.episodio .imgEpisodio{
+  width: 167px;
+  border-radius: 5px;
+}
+
+.infos-episodio{
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.infos-episodio p {
+  height: 96px;
+  width: 100%;
+  line-height: 30px;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.participantes{
+  align-items: center;
+  gap: 10px;
+}
+
+.participante{
+  align-items: center;
+  gap: 5px;
+}
+
+.participante img{
+  width: 30px;
+  border-radius: 50%;
 }

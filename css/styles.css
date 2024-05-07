@@ -25,7 +25,7 @@ button{
 
 body{
   width: 100vw;
-  padding-top: 65px;
+  padding-top: 74.4px;
 }
 
 header{
@@ -42,7 +42,7 @@ header{
 header nav{
   width: 100%;
   margin: auto;
-  padding: 0 3em;
+  padding: 0.3rem 3em;
   justify-content: space-between;
   align-items: center;
 }
@@ -65,4 +65,8 @@ a {
 }
 a:hover {
   color: #3e68e6;
+}
+
+main{
+  width: 100%;
 }
