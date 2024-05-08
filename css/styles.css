@@ -25,14 +25,14 @@ button{
 }
 
 body{
-  width: 100vw;
-  padding-top: 74.4px;
+  width: 100%;
 }
 
 header{
   width: 100%;
   position: fixed;
   top: 0;
+  backdrop-filter: blur(10px);
   z-index: 1000;
   background-color: #fff;
   display: flex;

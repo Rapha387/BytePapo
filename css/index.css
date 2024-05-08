@@ -20,9 +20,12 @@ h2{
 }
 
 .sobre{
+  color: #fff;
   width: 100%;
   background-color: #dadada;
   padding: var(--padding-center);
+  padding-top: 120px;
+  background: linear-gradient(120deg, #ffa500d9, #e40707e3);
 }
 .sobre .container{
   flex-direction: column;
@@ -35,10 +38,43 @@ h2{
   font-size: 1.2rem;
 }
 
-.episodios{
+.equipe{
   width: 100%;
-  background-color: #fff;
+  background-color: #e2e2e2;
   padding: var(--padding-center);
+}
+
+.equipe .container{
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.equipe .membros{
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 8%;
+  row-gap: 20px;
+}
+
+.equipe .membro{
+  width: 28%;
+}
+
+.membro img{
+  border-radius: 5px;
+  width: 100%;
+}
+
+
+.episodios{
+  background: linear-gradient(120deg, #45b7c8, #608b56, #fdb023);
+  width: 100%;
+  padding: var(--padding-center);
+}
+
+.episodios h2{
+  color: #fff;
 }
 
 .episodios .container{
@@ -47,7 +83,7 @@ h2{
 }
 
 .episodio{
-  background: #babaca;
+  background: #fff;
   border-radius: 5px;
   width: 100%;
   align-items: center;
@@ -56,9 +92,11 @@ h2{
   padding: 2rem;
   transition: 0.7s;
   cursor: pointer;
+  box-shadow: 2px 1px 13px #00000090;
 }
 
 .episodio:hover{
+  transform: scale(1.01);
   background-color: #e8e8e8;
 }
 
@@ -101,31 +139,6 @@ h2{
 }
 
 
-.equipe{
-  width: 100%;
-  background-color: #dadada;
-  padding: var(--padding-center);
-}
-
-.equipe .container{
-  flex-direction: column;
-}
-
-.equipe .membros{
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 30px;
-}
-
-.equipe .membro{
-  width: 28%;
-}
-
-.membro img{
-  border-radius: 5px;
-  width: 100%;
-}
 
 
 @media screen and (max-width: 800px){
