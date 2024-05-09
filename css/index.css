@@ -3,11 +3,16 @@
 }
 
 h1{
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h2{
   font-size: 2.5rem;
+  text-align: center;
+}
+
+h3{
+  font-size: 1.2rem;
 }
 
 .container{
@@ -22,9 +27,7 @@ h2{
 .sobre{
   color: #fff;
   width: 100%;
-  background-color: #dadada;
   padding: var(--padding-center);
-  padding-top: 120px;
   background: linear-gradient(120deg, #ffa500d9, #e40707e3);
 }
 .sobre .container{
@@ -52,20 +55,24 @@ h2{
 .equipe .membros{
   width: 100%;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 8%;
-  row-gap: 20px;
+  gap: 5%;
+  row-gap: 30px;
 }
 
 .equipe .membro{
-  width: 28%;
+  width: 255px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.equipe .membro span{
+  font-size: 1.2rem;
 }
 
 .membro img{
   border-radius: 5px;
   width: 100%;
 }
-
 
 .episodios{
   background: linear-gradient(120deg, #45b7c8, #608b56, #fdb023);
@@ -96,19 +103,42 @@ h2{
 }
 
 .episodio:hover{
+  color: #000;
   transform: scale(1.01);
   background-color: #e8e8e8;
 }
 
+.episodio .episodio-data{
+  font-weight: 600;
+}
+
 .episodio .imgEpisodio{
-  width: 186px;
+  width: 200px;
   border-radius: 5px;
 }
 
 .infos-episodio{
+  width: 100%;
   justify-content: space-between;
   gap: 10px;
   flex-direction: column;
+}
+
+.participantes{
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.participante{
+  align-items: center;
+  gap: 5px;
+}
+
+.participante img{
+  width: 30px;
+  border-radius: 50%;
 }
 
 .infos-episodio p {
@@ -123,23 +153,26 @@ h2{
   text-overflow: ellipsis;
 }
 
-.participantes{
-  align-items: center;
-  gap: 10px;
+.btnVerMais{
+  padding: 1rem 2rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #f48812;
+  border: none;
+  transition: 0.4s;
+  border-radius: 10px;
 }
 
-.participante{
-  align-items: center;
-  gap: 5px;
+.btnVerMais:hover{
+  background-color: #fdb023;
 }
 
-.participante img{
-  width: 30px;
-  border-radius: 50%;
+.parceiros{
+  width: 100%;
+  background-color: #e2e2e2;
+  padding: var(--padding-center);
 }
-
-
-
 
 @media screen and (max-width: 800px){
   .episodio{
@@ -148,5 +181,15 @@ h2{
 
   .episodio-data{
     display: none;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .participantes{
+    flex-direction: column;
+  }
+
+  .episodio .imgEpisodio{
+    width: 60%;
   }
 }

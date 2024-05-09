@@ -16,10 +16,10 @@
         <img src="images/logoSemFundo.png" alt="">
       </a>
       <ul class="flex flex-center">
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Equipe</a></li>
-          <li><a href="">Episódios</a></li>
-          <li><a href="">Parceiros</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#episodios">Episódios</a></li>
+          <li><a href="#parceiros">Parceiros</a></li>
       </ul>
       <label for="chkMenuHeader" class="btnMenuHeader escondido" id="btnMenuHeader">
         <span class="linha"></span>
@@ -31,7 +31,7 @@
   </header>
 
   <main>
-    <div class="sobre flex flex-center">
+    <div id="sobre" class="sobre flex flex-center">
       <div class="container flex flex-center">
         <h1>
           BytePapo
@@ -50,55 +50,55 @@
       </div>
     </div>
 
-    <div class="equipe">
+    <div id="equipe" class="equipe">
       <div class="container flex flex-center">
         <h2>Equipe</h2>
 
-        <div class="membros flex">
+        <div class="membros flex flex-center">
           <div class="membro">
             <img src="images/equipe/filipi.jpg" alt="imagem de filipi">
             <span>Filipi Souza</span>
           </div>
           <div class="membro">
             <img src="images/equipe/isabelle.jpg" alt="imagem de filipi">
-            <span>Filipi Souza</span>
+            <span>Isabelle Maluza</span>
           </div>
           <div class="membro">
             <img src="images/equipe/thiago.jpg" alt="imagem de filipi">
-            <span>Filipi Souza</span>
+            <span>Thiago Luis</span>
           </div>
           <div class="membro">
             <img src="images/equipe/bruna.jpg" alt="imagem de filipi">
-            <span>Filipi Souza</span>
+            <span>Bruna de Araujo</span>
           </div>
           <div class="membro">
             <img src="images/equipe/gustavo.jpg" alt="imagem de filipi">
-            <span>Filipi Souza</span>
+            <span>Gustavo Negrão</span>
           </div>
           <div class="membro">
             <img src="images/equipe/julia.jpg" alt="imagem de filipi">
-            <span>Filipi Souza</span>
+            <span>Julia Rodrigues</span>
           </div>
           <div class="membro">
             <img src="images/equipe/raphael.jpeg" alt="imagem de filipi">
-            <span>Filipi Souza</span>
+            <span>Raphael Lima</span>
           </div>
           <div class="membro">
             <img src="images/equipe/giovanna.jpg" alt="imagem de filipi">
-            <span>Filipi Souza</span>
+            <span>Giovanna Melgares</span>
           </div>
         </div>
 
       </div>
     </div>
 
-    <div class="episodios">
+    <div id="episodios" class="episodios">
       <div class="container flex flex-center">
         <h2>
           Últimos Episódios
         </h2>
 
-        <div class="episodio flex">
+        <a href="https://soundcloud.com/raphalima337/bytepapo-episodio-1?in=raphalima337/sets/bytepapo" target="_blank" class="episodio flex">
           <div class="episodio-data">
             <p>EP 1</p>
             <p>02/05/2024</p>
@@ -123,9 +123,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="episodio flex">
+        <a href="https://soundcloud.com/raphalima337/bytepapo-episodio-1?in=raphalima337/sets/bytepapo" target="_blank" class="episodio flex">
           <div class="episodio-data">
             <p>EP 1</p>
             <p>02/05/2024</p>
@@ -150,12 +150,16 @@
               </div>
             </div>
           </div>
-        </div>
+        </a>
+        <button id="btnVerMais" type="button" class="btnVerMais">Ver Mais</button>
+
       </div>
     </div>
 
-    <div class="parceiros">
-
+    <div id="parceiros" class="parceiros">
+      <div class="container flex flex-center">
+        <h2>Podcasts Parceiros</h2>
+      </div>
     </div>
   </main>
 
