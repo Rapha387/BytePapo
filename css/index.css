@@ -195,13 +195,14 @@ h3{
 .parceiros-flex a{
   display: block;
   width: 255px;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
 }
 
 .podcast .nomePodcast{
-  background-color: #f48812cc;;
+  background-color: #f48812cc;
   width: 100%;
   padding: 3px 0;
-  border-radius: 0 0 5px 5px;
 }
 
 .podcast .nomePodcast span{
@@ -221,6 +222,13 @@ h3{
   width: 100%;
   display: block;
 }
+
+.patrocinadores{
+  width: 100%;
+  padding: var(--padding-center);
+}
+
+
 
 
 @media screen and (max-width: 800px){

@@ -110,6 +110,34 @@ main{
   width: 100%;
 }
 
+
+footer{
+  width: 100%;
+}
+
+footer nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3em;
+  border-top: solid 2px #f48812cc;
+}
+
+#logoFooter{
+  width: 150px;
+}
+
+footer nav img{
+  width: 100px;
+}
+
+footer nav div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 @media screen and (max-width: 500px){
   header nav ul{
     display: none !important;
